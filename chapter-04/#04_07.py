@@ -15,7 +15,7 @@ def computegrade():
       score=None
       try:
          score=input("Enter score:")
-         if score=="done" or score=="done":
+         if score=="Done" or score=="done":
             print("Done!")
             break
          score=float(score)
