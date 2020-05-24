@@ -13,3 +13,19 @@ Enter a number: 7
 Enter a number: done
 16 3 5.333333333333333
 """
+total=0
+avg=0
+n=0
+while True:
+   num=None
+   try:
+      num=input("Enter a number: ")
+      if num=="Done" or num=="done":
+         break
+      num=int(num)
+      total+=num
+      n+=1
+   except:
+      print("Invalid input")
+avg=total/n
+print(total,n,avg)
