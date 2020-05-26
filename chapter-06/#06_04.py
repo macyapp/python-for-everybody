@@ -5,3 +5,5 @@ https://docs.python.org/library/stdtypes.html#string-methods
 Write an invocation that counts the number of times the letter a occurs in “ba-
 nana”.
 """
+fruit="banana"
+print(fruit.count('a',0,len(fruit)))
