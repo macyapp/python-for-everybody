@@ -1,9 +1,10 @@
+import sys
 fname = input('Enter the file name: ')
 try:
    fhand = open(fname)
 except:
    print("File",fname," not found!!")
-   exit()
+   sys.exit()
 count = 0
 for line in fhand:
    if line.startswith('Subject:'):

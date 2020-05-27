@@ -21,16 +21,16 @@ NA NA BOO BOO TO YOU - You have been punk'd!
 We are not encouraging you to put Easter Eggs in your programs; this
 is just an exercise.
 """
-import sys as ss
+import sys
 fname = input('Enter the file name: ')
 try:
    fhand = open(fname)
 except:
    if fname == "na na boo boo":
       print("NA NA BOO BOO TO YOU - You have been punk'd!")
-      ss.exit()
+      sys.exit()
    print("File",fname," not found!!")
-   ss.exit()
+   sys.exit()
 count = 0
 for line in fhand:
    if line.startswith('Subject:'):
