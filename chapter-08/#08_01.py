@@ -17,9 +17,9 @@ my_list1 = [1, 2, 3, 4]
 my_list2 = [1, 2, 3, 4]
 
 chop_list = chop(my_list1)
-print(my_list1)                          # Should be [2,3]
-print(chop_list)                        # Should be None
+print(my_list1)                        # Should be [2,3]
+print(chop_list)                       # Should be None
 
 middle_list = middle(my_list2)
-print(my_list2)                         # Should be unchanged
-print(middle_list)                      # Should be [2,3]
+print(my_list2)                        # Should be unchanged
+print(middle_list)                     # Should be [2,3]
