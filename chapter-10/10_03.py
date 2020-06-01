@@ -10,6 +10,7 @@ the tables at https://wikipedia.org/wiki/Letter_frequencies.
 import string
 fhand=open("mbox.txt")
 direc=dict()
+count=0
 for line in fhand:
    line=line.rstrip()
    line=line.translate(line.maketrans('', '',string.digits))
@@ -20,11 +21,12 @@ for line in fhand:
       continue
    for word in words:
       for c in word:
+         count+=1
          direc[c]=direc.get(c,0)+1
 
 ldir=list()
 for key,value in direc.items():
-   ldir.append((value,key))
+   ldir.append((value/count,key))
 
 ldir.sort()
 
