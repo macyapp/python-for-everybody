@@ -28,7 +28,7 @@ ldir=list()
 for key,value in direc.items():
    ldir.append((value/count,key))
 
-ldir.sort()
+ldir.sort(reverse=True)
 
 for key,value in ldir:
    print(value,key)
