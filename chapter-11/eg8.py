@@ -2,7 +2,7 @@
 # followed by numbers and '.'
 # Then print the number if it is greater than zero
 import re
-hand = open('/home/sidhant/Prototype/python-for-everybody/chapter-11/mbox-short.txt')
+hand = open('mbox-short.txt')
 for line in hand:
    line = line.rstrip()
    x = re.findall('^Details:.*rev=([0-9.]+)', line)
