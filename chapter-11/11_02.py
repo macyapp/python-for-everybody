@@ -13,3 +13,19 @@ Enter file:mbox.txt
 Enter file:mbox-short.txt
 39756
 """
+import re
+count=0
+total=0
+avg=0
+fname="mbox.txt"
+fhand=open(fname)
+inp="^New.+: ([0-9]+)"
+for line in fhand:
+   line=line.rstrip()
+   x=re.findall(inp,line)
+   x=[int(i) for i in x]
+   for i in x:
+      total+=i
+      count+=1
+avg=total//count
+print(avg)

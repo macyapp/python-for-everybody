@@ -15,3 +15,13 @@ $ python grep.py
 Enter a regular expression: java$
 mbox.txt had 4175 lines that matched java$
 """
+import re
+count=0
+fname="mbox.txt"
+fhand=open(fname)
+inp=input("Enter a regular expression:")
+for line in fhand:
+   line=line.rstrip()
+   if re.search(inp,line):
+      count+=1
+print(fname,"has",count,"lines that match",inp)
