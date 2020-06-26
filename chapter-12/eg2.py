@@ -16,8 +16,8 @@ while True:
         break
     #time.sleep(0.25)
     count+=len(data)
-    print(len(data), count)
-    picture = picture + data
+    print(len(data),count)
+    picture+=data
 
 mysock.close()
 
