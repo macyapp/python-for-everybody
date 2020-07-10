@@ -6,3 +6,8 @@ name for the socket connect call. Add error checking using try and
 except to handle the condition where the user enters an improperly
 formatted or non-existent URL.
 """
+import socket
+
+mysock=socket(socket.AF_INET,socket.SOCK_STREAM)
+HOST=input("Enter host: ")
+PORT=80
